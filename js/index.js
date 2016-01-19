@@ -116,6 +116,10 @@
     speech.stop();
   };
 
+  app.addPoint = function(){
+    chart.addPoint(Math.random()*10)
+  };
+
   // exports
   window.app = app;
 })();

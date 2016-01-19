@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>show your voice</title>
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
   <div class="container">
 
-    <div class="well btns">
+    <div class="well btns clearfix">
       <button id="start" class="btn btn-primary" onclick="app.start()">Speech Start</button>
       <span id="tip" class="text-info hide">speeching...</span>
       <button id="stop" class="btn btn-warning hide" onclick="app.stop()">Speech Stop</button>
+      <button id="addPoint" class="btn btn-default pull-right" onclick="app.addPoint()">Add RanPoint</button>
     </div>
 
     <div class="panel panel-default">
